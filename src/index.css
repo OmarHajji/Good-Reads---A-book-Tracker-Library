@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Pattaya&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import "tailwindcss";
+@theme {
+  --color-dark-brown: #423726;
+  --color-brown: #875c1a;
+  --color-brown-200: rgba(135, 92, 26, 0.45);
+  --color-beige: #f3d2a1;
+  --color-light-beige: #fff2de;
+  --color-gray1: #f3f3f3;
+  --color-gray2: #dddddd;
+  --color-gray3: #5d5d5d;
+  --font-sans: Outfit, sans-serif;
+  --font-playfair: Playfair Display, sans-serif;
+  --font-pattaya: Pattaya, sans-serif;
+  --font-inter: Inter, sans-serif;
+  --breakpoint--xs: 410px;
+}
+
+footer ul li a {
+  @apply hover:text-brown  hover:underline  transition-colors;
+}
+input {
+  @apply focus:outline-none;
+}
+button {
+  @apply hover:cursor-pointer transition;
+}
